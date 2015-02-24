@@ -1,0 +1,8 @@
+<?xml version = '1.0'?>
+<app-settings>
+ <properties>
+  <property key="MainFrame.height">319</property>
+  <property key="MainFrame.width">424</property>
+  <property key="LookAndFeel">com.sun.java.swing.plaf.motif.MotifLookAndFeel</property>
+ </properties>
+</app-settings>
