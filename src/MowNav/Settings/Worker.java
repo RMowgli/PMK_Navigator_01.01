@@ -25,23 +25,23 @@ import org.w3c.dom.Text;
  *
  * @author Victor
  */
-public class MowNavSettings {
+public class Worker {
 
     /**
      * Блок инициализации статических членов класса Создаем единственный
      * экземпляр данного объекта в статической переменной SINGLETON
      */
     private HashMap fHashMap;
-    private static MowNavSettings SINGLETON;
+    private static Worker SINGLETON;
 
     static {
-        SINGLETON = new MowNavSettings();
+        SINGLETON = new Worker();
     }
 
     /**
      * Конструктор класа
      */
-    private MowNavSettings() {
+    private Worker() {
         fHashMap = new HashMap();
     }
 

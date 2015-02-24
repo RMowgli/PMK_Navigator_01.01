@@ -8,7 +8,7 @@ package MowNav;
 import java.io.File;
 import javax.swing.UIManager;
 
-import MowNav.Settings.MowNavSettings;
+import MowNav.Settings.Worker;
 
 /**
  *
@@ -38,7 +38,7 @@ public class MowNav {
         try {
             File file = new File(propDir, "settings.xml");
             try {
-                MowNavSettings.save(file);
+                Worker.save(file);
             } catch (Exception e) {
             }
         } finally {
@@ -50,8 +50,8 @@ public class MowNav {
         try {
             File file = new File(propDir, "settings.xml");
             try {
-                MowNavSettings.clear();
-                MowNavSettings.load(file);
+                Worker.clear();
+                Worker.load(file);
             } catch (Exception e) {
             }
         } finally {
