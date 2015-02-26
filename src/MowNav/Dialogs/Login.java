@@ -30,6 +30,7 @@ public class Login extends javax.swing.JDialog {
 
         headerPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         dataPanel = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -62,6 +63,8 @@ public class Login extends javax.swing.JDialog {
 
         jLabel1.setText("ПМК Навигатор");
 
+        jLabel12.setText("ver.");
+
         javax.swing.GroupLayout headerPanelLayout = new javax.swing.GroupLayout(headerPanel);
         headerPanel.setLayout(headerPanelLayout);
         headerPanelLayout.setHorizontalGroup(
@@ -69,13 +72,17 @@ public class Login extends javax.swing.JDialog {
             .addGroup(headerPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel12)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         headerPanelLayout.setVerticalGroup(
             headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(headerPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addGroup(headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel12))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
@@ -351,6 +358,7 @@ public class Login extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
